@@ -7,42 +7,31 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Puissance4
 {
-	/**
-	 * Déclaration de la constante pour l'emplacement vide
-	 */
-	// TODO (fait) écrire un commentaire
-	// TODO (fait) respecter les conventions d'écriture
-	public final static int EMPLACEMENTVIDE = 0;
-
-	/**
-	 * Déclaration de la constante pour l'emplacement d'un pion Jaune
-	 */
-	// TODO (fait) écrire un commentaire
-	// TODO (fait)  respecter les conventions d'écriture
-	public final static int EMPLACEMENTJAUNE = 1;
 	
 	/**
-	 * Déclaration de la constante pour l'emplacement d'un pion Rouge
+	 *  Création d'un attribut grille de type Grille 
 	 */
-	// TODO (fait)  écrire un commentaire
-	// TODO (fait) respecter les conventions d'écriture
-	public final static int EMPLACEMENTROUGE = 2;
+	private Grille grille;
+
+	/**
+	 * Création d'un attribut joueur1 de type Joueur
+	 */
+	private Joueur joueur1;
+	
+	/**
+	 * Création d'un attribut joueur2 de type Joueur
+	 */
+	private Joueur joueur2;
 			
 	/**
-	 * Création d'une nouvelle partie, avec 2 nouveaux joueurs et une grille est vide.
+	 * Création d'une nouvelle partie, avec 2 nouveaux joueurs et une grille  vide.
 	 */
 	public Puissance4()
 	{
-		
-		// TODO ???
-		public void Grille()
-		{
-			Grille grille= new Grille()
-		}
-		new joueur()
-		{
-			
-		}
+		this.grille = new Grille();
+		this.joueur1 = new Joueur();
+		this.joueur2 = new Joueur();
+	
 	}
 
 	/**
