@@ -1,7 +1,16 @@
+// TODO écrire un commentaire
 public class Puissance4
 {
+	// TODO écrire un commentaire
+	// TODO respecter les conventions d'écriture
 	public final static int emplacementvide = 0;
+
+	// TODO écrire un commentaire
+	// TODO respecter les conventions d'écriture
 	public final static int emplacementJaune = 1;
+	
+	// TODO écrire un commentaire
+	// TODO respecter les conventions d'écriture
 	public final static int emplacementRouge = 2;
 			
 	/**
@@ -9,6 +18,8 @@ public class Puissance4
 	 */
 	public Puissance4()
 	{
+		
+		// TODO ???
 		public grille(int[7],[6])
 		
 		{

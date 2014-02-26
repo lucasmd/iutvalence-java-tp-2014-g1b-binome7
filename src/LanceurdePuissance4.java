@@ -1,5 +1,7 @@
+// TODO déplacer la classe dans un paquetage
 import fr.iutvalence.java.tp.Puissance4.*;
 
+// TODO écrire un commentaire précis
 /**
  * création de la classe afin de démarrer une partie de Puissance4
  * 
@@ -7,6 +9,7 @@ import fr.iutvalence.java.tp.Puissance4.*;
  */
 public class LanceurdePuissance4
 {
+	// TODO écrire un commentaire précis
 	/**
 	 * déclaration de la méthode main
 	 */
