@@ -27,16 +27,40 @@ public class Grille
 	// TODO (fait) respecter les conventions d'écriture
 	public final static int EMPLACEMENTROUGE = 2;
 
-//	emplacementgrille = new int[7][6]
-//			{'0','0','0','0','0','0','0',},
-//			{'0','0','0','0','0','0','0',},
-//			{'0','0','0','0','0','0','0',},
-//			{'0','0','0','0','0','0','0',},
-//			{'0','0','0','0','0','0','0',},
-//			{'0','0','0','0','0','0','0',}
+	/**
+	 * Création de l'attribut emplacement grille de type tableau (2 dimmensions)
+	 */
+	public  int[][] emplacementgrille;
+	 
+	/**
+	 * Création d'un constante définissant la Largeur par défault
+	 */
+	private final static int LARGEUR_DEFAULT = 6;
 	
+	/**
+	 * Création d'un constante définissant la hauteur par défault
+	 */
+	private final static int HAUTEUR_DEFAULT = 7;
+	
+	/**
+	 * Création de l'attribut hauteur
+	 */
+	private int hauteur;
+	
+	/**
+	 * Création de l'attribut largeur
+	 */
+	private int largeur;
+	
+	
+	/**
+	 * Création du constructeur permettant de créer une grille (vide au début)
+	 */
 	public Grille()
+
 	{
-		
+		this.hauteur = HAUTEUR_DEFAULT;
+		this.largeur = LARGEUR_DEFAULT;
+		emplacementgrille = new int[this.hauteur][this.largeur];
 	}
 }
