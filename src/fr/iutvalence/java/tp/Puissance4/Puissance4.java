@@ -35,10 +35,9 @@ public class Puissance4
 	{
 		
 		// TODO ???
-		public grille(int[7],[6])
-		
+		public void Grille()
 		{
-			
+			Grille grille= new Grille()
 		}
 		new joueur()
 		{
