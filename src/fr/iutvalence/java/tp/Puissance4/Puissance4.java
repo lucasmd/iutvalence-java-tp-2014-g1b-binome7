@@ -39,6 +39,14 @@ public class Puissance4
 	 */
 	public void jouer()
 	{
+		 while NbPionsAllignes<4 do
+			 if joueur1 a joué
+			 	joueur2 joue
+			 else joueur1 joue
+		 /* Afin de jouer il faudrait faire un getColone() ou le joueur dise le numéro
+		  * de colone ou il veut placer son pion */
+		  */
+		
 
 	}
 
