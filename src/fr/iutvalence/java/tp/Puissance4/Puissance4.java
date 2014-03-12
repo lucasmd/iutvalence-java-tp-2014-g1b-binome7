@@ -34,20 +34,28 @@ public class Puissance4
 	
 	}
 
+	@Override
+	public String toString()
+	{
+		return this.grille.toString();
+	}
+
+	
+
+
 	/**
 	 * Jouer la partie
 	 */
-	public void jouer()
+/*	public void jouer()
 	{
-		 while NbPionsAllignes<4 do
-			 if joueur1 a joué
+		 while (NbPionsAllignes<4)
+			 if (joueur1 a joué)
 			 	joueur2 joue
-			 else joueur1 joue
+			 else joueur1 joue*/
 		 /* Afin de jouer il faudrait faire un getColone() ou le joueur dise le numéro
 		  * de colone ou il veut placer son pion */
-		  */
+	
 		
 
 	}
 
-}
