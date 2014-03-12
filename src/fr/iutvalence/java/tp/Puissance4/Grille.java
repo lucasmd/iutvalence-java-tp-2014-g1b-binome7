@@ -44,7 +44,9 @@ public class Grille
 		this.largeur = LARGEUR_DEFAULT;
 		this.cases = new Emplacement[this.hauteur][this.largeur];
 	}
-
+	/**
+	 * A faire : tester chaque colone et ligne (toutes les cases) et mettre leurs valeurs (V, R ou J)
+	 */
 	@Override
 	public String toString()
 	{
@@ -52,7 +54,7 @@ public class Grille
 		for (int colones = 0; colones < this.largeur; colones++)
 		{
 			for (int lignes = 0; lignes < this.hauteur; lignes++)
-				result += " 0 " ;
+				result += Emplacement.V.toString() ;
 			result += '\n';
 		}
 		return result;

@@ -10,13 +10,13 @@ public enum Emplacement
 		/**
 		 * Déclaration de la constante pour l'emplacement vide
 		 */
-		VIDE,
+		V,
 		/**
 		 * Déclaration de la constante pour l'emplacement d'un pion Jaune
 		 */		
-		JAUNE,
+		J,
 		/**
 		 * Déclaration de la constante pour l'emplacement d'un pion Rouge
 		 */
-		ROUGE;
+		R;
 	}
