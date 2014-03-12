@@ -6,27 +6,8 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Grille
 {
-	/**
-	 * Création d'une énumération pour les constantes des emplacements (vide, prise par pion jaune ou rouge)
-	 *
-	 */
-	// TODO (fait) constantes à remplacer par une énumération
-
-	public enum Emplacement
-
-		/**
-		 * Déclaration de la constante pour l'emplacement vide
-		 */
-		0,
-		/**
-		 * Déclaration de la constante pour l'emplacement d'un pion Jaune
-		 */
-		1,
-		/**
-		 * Déclaration de la constante pour l'emplacement d'un pion Rouge
-		 */
-		2;
-
+	
+	// TODO(fait) constantes à remplacer par une énumération
 	
 	/**
 	 * Création d'un constante définissant la Largeur par défault
@@ -41,7 +22,7 @@ public class Grille
 	/**
 	 * Création de l'attribut emplacement grille de type tableau (2 dimmensions)
 	 */
-	private int[][] cases;
+	private Emplacement[][] cases;
 
 	/**
 	 * Création de l'attribut hauteur
@@ -61,7 +42,7 @@ public class Grille
 	{
 		this.hauteur = HAUTEUR_DEFAULT;
 		this.largeur = LARGEUR_DEFAULT;
-		this.cases = new int[this.hauteur][this.largeur];
+		this.cases = new Emplacement[this.hauteur][this.largeur];
 	}
 
 	@Override
