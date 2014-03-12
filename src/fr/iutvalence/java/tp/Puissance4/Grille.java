@@ -6,28 +6,28 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Grille
 {
-	// TODO constantes à remplacer par une énumération
 	/**
-	 * Déclaration de la constante pour l'emplacement vide
+	 * Création d'une énumération pour les constantes des emplacements (vide, prise par pion jaune ou rouge)
+	 *
 	 */
-	// TODO (fait) écrire un commentaire
-	// TODO (fait) respecter les conventions d'écriture
-	public final static int EMPLACEMENT_VIDE = 0;
+	// TODO (fait) constantes à remplacer par une énumération
 
-	/**
-	 * Déclaration de la constante pour l'emplacement d'un pion Jaune
-	 */
-	// TODO (fait) écrire un commentaire
-	// TODO (fait) respecter les conventions d'écriture
-	public final static int EMPLACEMENT_JAUNE = 1;
+	public enum Emplacement
 
-	/**
-	 * Déclaration de la constante pour l'emplacement d'un pion Rouge
-	 */
-	// TODO (fait) écrire un commentaire
-	// TODO (fait) respecter les conventions d'écriture
-	public final static int EMPLACEMENT_ROUGE = 2;
+		/**
+		 * Déclaration de la constante pour l'emplacement vide
+		 */
+		0,
+		/**
+		 * Déclaration de la constante pour l'emplacement d'un pion Jaune
+		 */
+		1,
+		/**
+		 * Déclaration de la constante pour l'emplacement d'un pion Rouge
+		 */
+		2;
 
+	
 	/**
 	 * Création d'un constante définissant la Largeur par défault
 	 */
