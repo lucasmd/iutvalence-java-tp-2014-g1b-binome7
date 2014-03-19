@@ -18,7 +18,6 @@ public enum Emplacement
 	 * Déclaration de la constante pour l'emplacement d'un pion Rouge
 	 */
 	ROUGE;
-	
 
 	public String toString()
 	{

@@ -58,7 +58,7 @@ public class Puissance4
 	this.joueuractuel = this.joueur1 ;
 	
 	
-	
+	// TODO  Tester aussi si il y a un pion ROUGE ou JAUNE
 	/**
 	 * Création de la fonction permettant de savoir si une une case est libre
 	 */
@@ -67,7 +67,7 @@ public class Puissance4
 		return grille[colonnes][lignes] == Emplacement.VIDE ;
 	}
 	
-	
+	// TODO Afficher le résultat
 	/**
 	 * Jouer la partie
 	 */
@@ -75,7 +75,7 @@ public class Puissance4
 	{
 		 while (NbPionsAllignes<4)
 			 if (this.joueuractuel = joueur1)
-			 	getColone()
+			 	getColonne()
 			 else 
 				 joueurSuivant()
 			if (/*?*/)

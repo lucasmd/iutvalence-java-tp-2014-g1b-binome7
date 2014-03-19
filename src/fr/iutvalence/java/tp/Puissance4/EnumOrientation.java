@@ -1,8 +1,8 @@
 package fr.iutvalence.java.tp.Puissance4;
 
 /**
- * Création de la classe pour énumération pour les constantes des orientations possible
- * (sens : avant, arrière / direction : horizontale, verticale)
+ * Création de la classe pour énumération pour les constantes des orientations
+ * possible (sens : avant, arrière / direction : horizontale, verticale)
  */
 
 public enum EnumOrientation
