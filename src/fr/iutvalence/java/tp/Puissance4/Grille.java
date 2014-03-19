@@ -6,9 +6,9 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Grille
 {
-	
+
 	// TODO(fait) constantes à remplacer par une énumération
-	
+
 	/**
 	 * Création d'un constante définissant la Largeur par défault
 	 */
@@ -44,17 +44,19 @@ public class Grille
 		this.largeur = LARGEUR_DEFAULT;
 		this.cases = new Emplacement[this.hauteur][this.largeur];
 	}
+
 	/**
-	 * A faire : tester chaque colone et ligne (toutes les cases) et mettre leurs valeurs (V, R ou J)
+	 * A faire : tester chaque colone et ligne (toutes les cases) et mettre
+	 * leurs valeurs (V, R ou J)
 	 */
 	@Override
 	public String toString()
 	{
 		String result = "";
-		for (int colones = 0; colones < this.largeur; colones++)
+		for (int colonnes = 0; colonnes < this.largeur; colonnes++)
 		{
 			for (int lignes = 0; lignes < this.hauteur; lignes++)
-				result += Emplacement.VIDE.toString() ;
+				result += Emplacement.VIDE.toString();
 			result += '\n';
 		}
 		return result;

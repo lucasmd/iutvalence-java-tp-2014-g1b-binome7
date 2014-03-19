@@ -57,17 +57,17 @@ public class Puissance4
 	else
 	this.joueuractuel = this.joueur1 ;
 	
+	
+	
 	/**
 	 * Création de la fonction permettant de savoir si une une case est libre
 	 */
-	private boolean caseLibre (int colones) 
+	private boolean caseLibre (int colonnes) 
 	{
-		return grille[colones][lignes] == Emplacement.VIDE ;
+		return grille[colonnes][lignes] == Emplacement.VIDE ;
 	}
 	
 	
-	
-
 	/**
 	 * Jouer la partie
 	 */
