@@ -24,7 +24,7 @@ public class Puissance4
 	private Joueur joueur2;
 
 	/**
-	 * Création d'un attribut joueur2 de type Joueur
+	 * Création d'un attribut joueuractuel de type Joueur pour savoir quel est le joueur qui joue
 	 */
 	private Joueur joueuractuel;
 	

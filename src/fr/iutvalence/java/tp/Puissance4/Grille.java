@@ -54,7 +54,7 @@ public class Grille
 		for (int colones = 0; colones < this.largeur; colones++)
 		{
 			for (int lignes = 0; lignes < this.hauteur; lignes++)
-				result += Emplacement.V.toString() ;
+				result += Emplacement.VIDE.toString() ;
 			result += '\n';
 		}
 		return result;
