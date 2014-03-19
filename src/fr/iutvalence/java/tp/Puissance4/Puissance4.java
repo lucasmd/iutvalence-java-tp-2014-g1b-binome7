@@ -28,10 +28,6 @@ public class Puissance4
 	 */
 	private Joueur joueuractuel;
 	
-	/**
-	 * Création d'un attribut pour le résultat
-	 */
-	private Puissance4 resultat;
 	
 	/**
 	 * Création d'une nouvelle partie, avec 2 nouveaux joueurs et une grille  vide.
@@ -69,16 +65,7 @@ public class Puissance4
 		return grille[colones][lignes] == Emplacement.VIDE ;
 	}
 	
-	/**
-	 * Création de la procédure getColone pour savoir dans quelle colone jouer
-	 */
-	private void getColone (int colones) {
-		if (caseLibre == Emplacement.VIDE)
-		System.out.println( " La colonne est pleine " ) ;
-		else
-		//On affecte a cette meme colone la nouvelle valeur ?
-		
-	}
+	
 	
 
 	/**
@@ -91,7 +78,7 @@ public class Puissance4
 			 	getColone()
 			 else 
 				 joueurSuivant()
-			if (resultat == Emplacement.VIDE)
+			if (/*?*/)
 				System.out.println( " La partie est nulle (égalité) " ) ;
 			else
 				System.out.println(this.joueuractuel + " gagne " ) ;

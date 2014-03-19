@@ -6,5 +6,15 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Joueur
 {
+	/**
+	 * Création de la procédure getColone pour savoir dans quelle colone jouer
+	 */
+	private void getColone (int colones) {
+		if (caseLibre == Emplacement.VIDE)
+		System.out.println( " La colonne est pleine " ) ;
+		else
+		//On affecte a cette meme colone la nouvelle valeur ?
+		
+	}
 
 }
