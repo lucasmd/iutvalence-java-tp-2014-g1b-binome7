@@ -6,18 +6,15 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Joueur
 {
-	// TODO Renvoyer si la colone est pleine de rejouer, sinon affecté le pion
+	// TODO Renvoyer si la colonne est pleine de rejouer, sinon affecté le pion
 	/**
-	 * Création de la procédure getColone pour savoir dans quelle colone jouer
+	 * Création de la procédure getColonne pour savoir dans quelle colonne jouer
 	 */
-	private void getColonne()
-	{
-		if (caseLibre == Emplacement.VIDE)
-			System.out.println(" La colonne est pleine ");
-		else if (Puissance4.joueuractuel == Puissance4.joueur1)
-			Emplacement.VIDE = Emplacement.ROUGE;
-		else
-			Emplacement.VIDE = Emplacement.JAUNE;
 
+	public int getColonne()
+	{
+		return this.Colonne;
 	}
+		
+	
 }
