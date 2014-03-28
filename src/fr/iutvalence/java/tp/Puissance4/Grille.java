@@ -61,5 +61,22 @@ public class Grille
 		}
 		return result;
 	}
-
+	// TODO Continuer la méthode ?
+	/**
+	 * methode qui permet de renvoyer l'état d'un emplacement
+	 */
+	public Emplacement EtatEmplacement(numeroDeligne,numeroDeColonne)
+	{
+		for (int cases = 0; cases < this.largeur; cases++)
+		{
+			for (int cases1 = 0; cases1 < this.hauteur; cases1++)
+				if (this == Emplacement.JAUNE)
+					return "Pion Jaune présent  sur cette case";
+				if (this == Emplacement.ROUGE)
+					return "Pion Rouge présent sur cette case";
+				return "Emplacement vide";	
+			;
+		}
+		return result;
+	}
 }

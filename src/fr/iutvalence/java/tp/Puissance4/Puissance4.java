@@ -50,7 +50,7 @@ public class Puissance4
 	/**
 	 *  Création de la procédure permettant de passer au joueur suivant
 	 */
-	private void joueurSuivant () 
+	private void joueurSuivant() 
 	{
 	if (this.joueuractuel == this.joueur1)
 	this.joueuractuel = this.joueur2 ;
@@ -62,9 +62,9 @@ public class Puissance4
 	/**
 	 * Création de la fonction permettant de savoir si une une case est libre
 	 */
-	private boolean caseLibre (int colonnes) 
+	private boolean estColonneLibre (int numeroDeColonne) 
 	{
-		return grille[colonnes][lignes] == Emplacement.VIDE ;
+		return this.grille.obtenirEmplacement(0,numeroDeColonne) == Emplacement.VIDE ;
 	}
 	
 	// TODO Afficher le résultat
@@ -75,11 +75,12 @@ public class Puissance4
 	{
 		 while (NbPionsAllignes<4)
 			 if (this.joueuractuel = joueur1)
-			 	getColonne()
+			 	Joueur.getColonne()
 			 else 
 				 joueurSuivant()
-			if (/*?*/)
-				System.out.println( " La partie est nulle (égalité) " ) ;
+			if (caseLibre == false)
+				System.out.println("Vous devez rejouer, cette case n'est pas libre");
+				Joueur.getColonne();
 			else
 				System.out.println(this.joueuractuel + " gagne " ) ;
 	

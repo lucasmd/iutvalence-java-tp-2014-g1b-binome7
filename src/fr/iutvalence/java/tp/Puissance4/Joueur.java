@@ -6,12 +6,12 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Joueur
 {
-	// TODO Renvoyer si la colonne est pleine de rejouer, sinon affecté le pion
+
 	/**
 	 * Création de la procédure getColonne pour savoir dans quelle colonne jouer
 	 */
 
-	public int getColonne()
+	public static int getColonne()
 	{
 		return this.Colonne;
 	}
