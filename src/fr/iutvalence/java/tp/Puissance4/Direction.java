@@ -5,7 +5,7 @@ package fr.iutvalence.java.tp.Puissance4;
  * possible (sens : avant, arrière / direction : horizontale, verticale)
  */
 
-public enum EnumOrientation
+public enum Direction
 {
 	/**
 	 * Déclaration de la constante pour arrière

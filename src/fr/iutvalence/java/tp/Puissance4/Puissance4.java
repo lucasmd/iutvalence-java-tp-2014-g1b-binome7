@@ -7,7 +7,7 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Puissance4
 {
-	
+	nombredepionalignes
 	/**
 	 *  Création d'un attribut grille de type Grille 
 	 */
@@ -87,13 +87,55 @@ public class Puissance4
 	/**
 	 * Création de la méthode permettant de donné le nombre de pion alignés
 	 */
-	private int nombredepionalignes (int colonne,int ligne, int direction) {
-		int i = 0 ;
-		if 
-		i++ ;
+	private int nombreDePionAlignes (int colonne,int ligne, Direction direction) 
+		int nbAligns = 0
+	{
+		 if (joueur == joueur1) 
+		 {
+             Grille.cases = Emplacement.JAUNE;
+         } 
+		 else 
+		 {
+        	 Grille.cases = Emplacement.ROUGE;
+         } 
+	}
+	
+	}
+		
+	
+	private int[] positionVoisine(int colonne, int ligne, Direction direction)
+	{
+		int[] position = new int[2];
+		
+		switch (direction)
+		{
+		  case HAUT:
+			  position[0]=colonne;position[1]=ligne+1;
+		    break;
+		  case BAS:
+			  position[0]=colonne;position[1]=ligne-1;
+		    break;
+		  case DROITE:
+			  position[0]=colonne+1;position[1]=ligne;
+		    break;
+		  case GAUCHE:
+			  position[0]=colonne-1;position[1]=ligne;
+		    break;
+		  case HAUT_DROITE:
+			  position[0]=colonne+1;position[1]=ligne+1;
+		    break;
+		  case BAS_DROITE:
+			  position[0]=colonne+1;position[1]=ligne-1;
+		    break;
+		  case HAUT_GAUCHE:
+			  position[0]=colonne-1;position[1]=ligne+1;
+		    break;
+		  case BAS_GAUCHE:
+			  position[0]=colonne-1;position[1]=ligne-1;
+		    break;
 		}
-	
-	
+		return position;
+	}
 	/**
 	 * Création de la fonction permettant de dire si 4 pions sont alignés 
 	 */
