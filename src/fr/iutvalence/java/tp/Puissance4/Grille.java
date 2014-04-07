@@ -64,8 +64,9 @@ public class Grille
 	// TODO Continuer la méthode ?
 	/**
 	 * methode qui permet de renvoyer l'état d'un emplacement
+	 * @return 
 	 */
-	public Emplacement EtatEmplacement(numeroDeligne,numeroDeColonne)
+	public Emplacement EtatEmplacement(int numeroDeligne,int numeroDeColonne)
 	{
 		for (int cases = 0; cases < this.largeur; cases++)
 		{
@@ -79,4 +80,6 @@ public class Grille
 		}
 		return result;
 	}
-}
+
+
+	

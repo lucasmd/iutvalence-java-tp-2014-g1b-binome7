@@ -64,7 +64,7 @@ public class Puissance4
 	 */
 	private boolean estColonneLibre (int numeroDeColonne) 
 	{
-		return this.grille.obtenirEmplacement(0,numeroDeColonne) == Emplacement.VIDE ;
+		return this.grille.EtatEmplacement(0,numeroDeColonne) == Emplacement.VIDE ;
 	}
 	
 	// TODO Afficher le résultat
@@ -83,6 +83,42 @@ public class Puissance4
 				Joueur.getColonne();
 			else
 				System.out.println(this.joueuractuel + " gagne " ) ;
+	}
+	/**
+	 * Création de la méthode permettant de donné le nombre de pion alignés
+	 */
+	private int nombredepionalignes (int colonne,int ligne, int direction) {
+		int i = 0 ;
+		if 
+		i++ ;
+		}
 	
+	
+	/**
+	 * Création de la fonction permettant de dire si 4 pions sont alignés 
+	 */
+	private boolean sontalignés (int position,int direction {
+		
+			int nbPionsAlignes = 0;  
+			
+			int DirectionMinimum = DirectionMinimum - 3;
+			if (DirectionMinimum <= 0)
+			
+				
+			int	DirectionMaximum = +3;
+			if DirectionMaximum >= 0)
+				DirectionMaximum = 0;
+			
+			
+			for (int i = DirectionMinimum; i <= DirectionMaximum; i++) {
+				if (this.position == ETATEMPLACEMENTSPECIFIQUE)
+					nbAlign++;
+				else
+					nbAlign = 0;
+
+				if (nbAlign == 4)
+					return true;
+			}
+			return false;
 		
 }

@@ -10,18 +10,34 @@ public enum EnumOrientation
 	/**
 	 * Déclaration de la constante pour arrière
 	 */
-	ARRIERE,
+	HAUT,
 	/**
 	 * Déclaration de la constante pour avant
 	 */
-	AVANT,
+	BAS,
 	/**
 	 * Déclaration de la constante pour horizontale
 	 */
-	HORIZONTALE,
+	GAUCHE,
 
 	/**
 	 * Déclaration de la constante pour verticale
 	 */
-	VERTICALE;
+	DROITE,
+	/**
+	 * Déclaration de la constante pour verticale
+	 */
+	HAUT_GAUCHE,
+	/**
+	 * Déclaration de la constante pour verticale
+	 */
+	BAS_DROITE,
+	/**
+	 * Déclaration de la constante pour verticale
+	 */
+	HAUT_DROITE,
+	/**
+	 * Déclaration de la constante pour verticale
+	 */
+	BAS_GAUCHE;
 }
