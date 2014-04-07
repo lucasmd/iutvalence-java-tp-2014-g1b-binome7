@@ -88,8 +88,10 @@ public class Puissance4
 	 * Création de la méthode permettant de donné le nombre de pion alignés
 	 */
 	private int nombreDePionAlignes (int colonne,int ligne, Direction direction) 
-		int nbAligns = 0
+		
 	{
+		
+		int nbAligns = 0
 		 if (joueur == joueur1) 
 		 {
              Grille.cases = Emplacement.JAUNE;
@@ -99,10 +101,38 @@ public class Puissance4
         	 Grille.cases = Emplacement.ROUGE;
          } 
 	}
+	int ColonneActuelle = colonne;
+    int LigneActuelle = ligne;
+    Grille.cases = Emplacement.VIDE;
+    
+    while ((ColonneActuelle >= 0) && (ColonneActuelle < Grille.HAUTEUR_DEFAULT) && (LigneActuelle >= 0) && (LigneActuelle < Grille.LARGEUR_DEFAULT)) 
+    {
+      if (grille[LigneActuelle][ColonneActuelle] != Grille.cases) 
+      {
+    	  Grille.cases = grille[LigneActuelle][ColonneActuelle];
+        compteur = 1;
+      } 
+      else 
+      {
+        compteur++;
+      }
+
+      if ((Grille.cases != VIDE) && (compteur == 4)) 
+      {
+        return true;
+      }
+      ColonneActuelle += colonne;
+      LigneActuelle += ligne;
+    }
+    return false;
+  }
 	
 	}
 		
 	
+	/**
+	 * Création de la fonction permettant de déterminer les positions voisine à la position courrante
+	 */
 	private int[] positionVoisine(int colonne, int ligne, Direction direction)
 	{
 		int[] position = new int[2];
