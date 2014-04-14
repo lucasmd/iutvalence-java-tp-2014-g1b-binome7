@@ -61,12 +61,11 @@ public class Grille
 		}
 		return result;
 	}
-	// TODO Continuer la méthode ?
 	/**
 	 * methode qui permet de renvoyer l'état d'un emplacement
 	 * @return 
 	 */
-	public Emplacement EtatEmplacement(int numeroDeligne,int numeroDeColonne)
+	public Emplacement etatEmplacement(int numeroDeligne,int numeroDeColonne)
 	{
 		return this.cases[numeroDeligne][numeroDeColonne];
 	}

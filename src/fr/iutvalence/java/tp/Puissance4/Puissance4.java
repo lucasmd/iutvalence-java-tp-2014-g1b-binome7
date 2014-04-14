@@ -7,7 +7,7 @@ package fr.iutvalence.java.tp.Puissance4;
  */
 public class Puissance4
 {
-	nombredepionalignes
+	
 	/**
 	 *  Création d'un attribut grille de type Grille 
 	 */
@@ -56,6 +56,7 @@ public class Puissance4
 	this.joueuractuel = this.joueur2 ;
 	else
 	this.joueuractuel = this.joueur1 ;
+	}
 	
 	
 	// TODO  Tester aussi si il y a un pion ROUGE ou JAUNE
@@ -64,7 +65,7 @@ public class Puissance4
 	 */
 	private boolean estColonneLibre (int numeroDeColonne) 
 	{
-		return this.grille.EtatEmplacement(0,numeroDeColonne) == Emplacement.VIDE ;
+		return this.grille.etatEmplacement(0,numeroDeColonne) == Emplacement.VIDE ;
 	}
 	
 	// TODO Afficher le résultat
@@ -76,14 +77,17 @@ public class Puissance4
 		 while (NbPionsAllignes<4)
 			 if (this.joueuractuel = joueur1)
 			 	Joueur.getColonne()
-			 else 
-				 joueurSuivant()
+			 		if (estColonneLibre(ColonneActuelle) == true)
+			 	Grille.EtatEmplacement = Emplacement.JAUNE;
+			 		else 
+				 joueurSuivant();
 			if (caseLibre == false)
 				System.out.println("Vous devez rejouer, cette case n'est pas libre");
 				Joueur.getColonne();
 			else
 				System.out.println(this.joueuractuel + " gagne " ) ;
 	}
+
 	/**
 	 * Création de la méthode permettant de donné le nombre de pion alignés
 	 */
@@ -91,25 +95,26 @@ public class Puissance4
 		
 	{
 		
-		int nbAligns = 0
-		 if (joueur == joueur1) 
+		int nbAligns = 0;
+		 if (Joueur == joueur1) 
 		 {
-             Grille.cases = Emplacement.JAUNE;
+			 this.grille.etatEmplacement(numeroDeligne,numeroDeColonne) == Emplacement.JAUNE;
          } 
 		 else 
 		 {
-        	 Grille.cases = Emplacement.ROUGE;
+			 this.grille.etatEmplacement(numeroDeligne,numeroDeColonne) == Emplacement.ROUGE;
          } 
 	}
 	int ColonneActuelle = colonne;
     int LigneActuelle = ligne;
-    Grille.cases = Emplacement.VIDE;
+    this.grille.etatEmplacement(numeroDeligne,numeroDeColonne) = Emplacement.VIDE;
     
     while ((ColonneActuelle >= 0) && (ColonneActuelle < Grille.HAUTEUR_DEFAULT) && (LigneActuelle >= 0) && (LigneActuelle < Grille.LARGEUR_DEFAULT)) 
     {
-      if (grille[LigneActuelle][ColonneActuelle] != Grille.cases) 
+      int compteur;
+	if (grille[LigneActuelle][ColonneActuelle] != this.grille.etatEmplacement(numeroDeligne,numeroDeColonne)) 
       {
-    	  Grille.cases = grille[LigneActuelle][ColonneActuelle];
+		this.grille.etatEmplacement(numeroDeligne,numeroDeColonne) = grille[LigneActuelle][ColonneActuelle];
         compteur = 1;
       } 
       else 
@@ -117,7 +122,7 @@ public class Puissance4
         compteur++;
       }
 
-      if ((Grille.cases != VIDE) && (compteur == 4)) 
+      if ((this.grille.etatEmplacement(numeroDeligne,numeroDeColonne) != VIDE) && (compteur == 4)) 
       {
         return true;
       }
@@ -125,9 +130,9 @@ public class Puissance4
       LigneActuelle += ligne;
     }
     return false;
-  }
+ 
 	
-	}
+	
 		
 	
 	/**
@@ -168,21 +173,27 @@ public class Puissance4
 	}
 	/**
 	 * Création de la fonction permettant de dire si 4 pions sont alignés 
+	 * @param position 
+	 * @param direction 
+	 * @return 
 	 */
-	private boolean sontalignés (int position,int direction {
+	private boolean sontalignes(int position,int direction)
+	{
 		
 			int nbPionsAlignes = 0;  
 			
 			int DirectionMinimum = DirectionMinimum - 3;
+			int DirectionMaximum;
 			if (DirectionMinimum <= 0)
 			
 				
-			int	DirectionMaximum = +3;
-			if DirectionMaximum >= 0)
+			DirectionMaximum = +3;
+			if (DirectionMaximum >= 0)
 				DirectionMaximum = 0;
 			
 			
 			for (int i = DirectionMinimum; i <= DirectionMaximum; i++) {
+				int nbAlign;
 				if (this.position == ETATEMPLACEMENTSPECIFIQUE)
 					nbAlign++;
 				else
@@ -193,4 +204,6 @@ public class Puissance4
 			}
 			return false;
 		
+}
+	}
 }
